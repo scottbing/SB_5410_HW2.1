@@ -128,7 +128,7 @@ def main():
     # coordinated sort
     # taken from:
     # https://stackoverflow.com/questions/9764298/how-to-sort-two-lists-which-reference-each-other-in-the-exact-same-way
-    dist, dest = zip(*sorted(zip(dist, dest)))
+    dist, dest = zip(*selection_sort(list(zip(dist, dest))))
     # print("Destination: ", dest)
     # print("Distance: ", dist)
     # print("dist: ", dist)
